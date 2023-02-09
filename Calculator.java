@@ -50,6 +50,8 @@ public class Calculator {
             default: 
                 System.out.println("Invalid entry"); 
                 break;
-        }
+        } 
+        //Close scanner to avoid memory leak
+        scannerObject.close();
     }
 }
