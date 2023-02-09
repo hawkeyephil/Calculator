@@ -37,7 +37,14 @@ public class Calculator {
                 break; 
             //Division
             case 4: 
-                System.out.println((firstOperand/secondOperand));
+                //Cannot divide by zero rule 
+                if(secondOperand == 0) {
+                    System.out.println("Error: Divide by Zero");
+                } 
+                //All other cases
+                else {
+                    System.out.println((firstOperand/secondOperand)); 
+                }
                 break; 
             //Error Message
             default: 
